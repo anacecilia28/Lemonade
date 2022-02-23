@@ -161,6 +161,7 @@ class MainActivity : AppCompatActivity() {
         else if(lemonadeState == SQUEEZE){
             textAction.text = resources.getString(R.string.lemon_squeeze)
             lemonImage?.setImageResource(R.drawable.lemon_squeeze)
+            showSnackbar()
         }
         else if(lemonadeState == DRINK){
             textAction.text = resources.getString(R.string.lemon_drink)
